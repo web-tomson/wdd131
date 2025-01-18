@@ -1,0 +1,14 @@
+/* Styles for larger screens */
+nav ul {
+  display: flex; /* Show menu as horizontal */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hamburger {
+  display: none; /* Hide hamburger menu on large screens */
+}
+
+.album {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
