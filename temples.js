@@ -1,9 +1,10 @@
-// Toggle menu visibility for small screens
-document.querySelector(".hamburger").addEventListener("click", () => {
-  const nav = document.querySelector("nav");
-  nav.classList.toggle("hidden");
-});
-
-// Display current year and last modified date in footer
-document.getElementById("current-year").textContent = new Date().getFullYear();
+// Dynamic footer content
 document.getElementById("last-modified").textContent = document.lastModified;
+
+// Hamburger menu toggle
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", () => {
+    navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
+});
