@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sierra Leone</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/jaguar-lies-avif" media="(max-width: 600px)">
+                <source srcset="images/639.jpg" media="(min-width: 601px)">
+                <img src="images/group-elephants-near-river.avif" alt="A lemur on a branch">
+            </picture>
+        </section>
+
+        <section class="info">
+            <article class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 73,253 sq km</li>
+                    <li><strong>Population:</strong> 8,908,040</li>
+                    <li><strong>Capital:</strong> Freetown</li>
+                    <li><strong>Languages:</strong> Krio, Englsh</li>
+                    <li><strong>Currency:</strong> Leone</li>
+                    <li><strong>Time Zone:</strong> GMT</li>
+                    <li><strong>Calling Code:</strong> +232</li>
+                    <li><strong>Internet TLD:</strong> .sl</li>
+                </ul>
+            </article>
+
+            <article class="weather">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <ul>
+                    <li><strong>Temperature:</strong> 30 &deg;C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> 14 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Ansu Tommy | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
